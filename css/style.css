@@ -6,14 +6,18 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* common utility */
+/* --------------------
+common utility
+---------- */
 body{
     font-family: 'Poppins', sans-serif;
     background-color:#FFFFFF;
    
 }
-/*banner*/
-/* --------top banner start---------------------- */
+
+/* -------------------------
+top banner start
+---------------------- */
 .top-banner{
     display: flex;
     justify-content: space-between;
@@ -46,7 +50,6 @@ margin-left: 5px;
 .fa-arrow-right:hover{
     transform: rotate3d(2, -1, -1, -0.2turn);
     color: #000000;
-    
 }
 .banner-image img{
     width: 444px;
@@ -104,14 +107,60 @@ main{
     color:#6C6C6C;
     line-height: 26px;
 }
+/* player section end  */
+/* new section add design  */
+.news-later{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    
+  }
+  .news{
+      width: 100%;
+      padding: 20px;
+  }
+  .news p{
+      margin-bottom: 20px;
+      text-align: justify;
+  }
+  .Recent-news{
+      width: 100%;
+      padding: 20px;
+  }
+  .form input {
+      padding: 15px;
+  }
+  .form p{
+      margin-bottom: 10px;
+  }
+  .news h2{
+      margin-bottom: 10px;
+  }
+  .Recent-news a{
+      text-decoration: none;
+      padding:12px 18px;
+      background-color: #c2b0b7;
+      margin-right: 30px;
+  }
+  .Recent-news h2 ,h3,p{
+      margin-bottom: 20px;
+  }
+  #btn{
+      width: 200px;
+  }
+  /* --------------
+  news letter section End
+  ------------------------ */
+
 /* ------------------------
-     footer design 
+     footer design  start 
 -------------------------- */
 footer{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 152px;
+    margin-top: 50px;
     
 }
 .logo img{
@@ -150,48 +199,7 @@ footer{
     margin-right: 290px;
     padding: 5px;
   }
-  /* news letter section start */
-
-  .news-later{
-    display:grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: space-between;
-    /* align-items: center; */
-    
-  }
-  .news{
-      width: 100%;
-  }
-  .news p{
-      margin-bottom: 10px;
-  }
-  .Recent-news{
-      width: 100%;
-  }
-  .form input {
-      padding: 15px;
-  }
-  .form p{
-      margin-bottom: 10px;
-  }
-  .news h2{
-      margin-bottom: 10px;
-  }
-  .Recent-news a{
-      text-decoration: none;
-      padding:12px 18px;
-      background-color: #c2b0b7;
-      margin-right: 30px;
-      
-  }
-  .Recent-news h2 ,h3,p{
-      margin-bottom: 20px;
-  }
-
-
-
-
-
+   /* footer design end  */
 /*-----------------------------------
  responsive design
 ----------------------------------*/
@@ -203,7 +211,7 @@ design for mobile  phone
     .container{
         width: 100%;
     }
-    .players{
+    .players,.news-later{
         grid-template-columns: repeat(1, 1fr);
         align-items: center;
         width: 88%;
@@ -215,7 +223,13 @@ design for mobile  phone
     .player-image img{
         padding-right: 10px;
     }
+    .news p{
+        margin-bottom: 10px;
+    }
 }
+ /* --------------------------
+ responsive header for mobile device 
+ ------------------------------------- */
 @media only screen and (max-width:688px){
     .header{
         width: 100%;
@@ -271,3 +285,6 @@ design for i pad
         flex-direction: column;
     }
  }
+ /* -------------------
+ design End  
+ -----------------------*/
