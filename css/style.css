@@ -1,0 +1,221 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color:#FFFFFF;
+
+
+}
+/*banner*/
+/* --------top banner start---------------------- */
+.top-banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#2D25A0;
+    width: 100%;
+    margin-bottom: 70px;
+}
+.banner-text{
+    margin-left: 130px;
+    color: #F3F1FF;
+    margin-top: 207px;
+    margin-bottom: 240px;
+}
+.text{
+    font-size: 64px;
+    margin-bottom: 27px;
+    
+}
+.banner-text a{
+    background-color:#E02C6D;
+    text-decoration: none;
+    padding: 8px 24px;
+    position: absolute;
+    color:#FFFFFF;
+    font-size: 16px;
+    
+}
+a .fa-arrow-right{
+margin-left: 5px;
+    
+
+}
+.banner-text a:hover{
+    border: 3px solid #1505f7;
+}
+.banner-image img{
+    width: 444px;
+    height: 438px;
+    margin-top: 153px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    margin-bottom: 86px;
+    margin-right: 169px;
+    
+}
+
+
+/********************************/
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.container{
+    width: 1050px;
+    /* position: relative; */
+} 
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    margin-bottom: 27px;
+}
+.player{
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+}
+.player-image img{
+    width: 300px;
+    height: 256px; 
+}
+.player-info h5{
+    font-size: 28px;
+    color:#18191F;
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+.player-info p{
+    font-size: 16px;
+    color:#6C6C6C;
+    line-height: 26px;
+}
+
+/* -----------------
+new section 
+-------------------- */
+.body-margin:hover{
+    border: 2px solid green;
+}
+.top-margin:hover{
+    border: 2px solid green;
+}
+/* ------------------------
+footer design 
+-------------------------- */
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 152px;
+    
+}
+.logo img{
+    margin-left: 105px;
+    margin-right: 200px;
+    width:483px;
+    height:110px ;
+    font-size: 30px;
+}
+.logo img:hover{
+    border: 2px solid green;
+}
+.footer-icon
+    {
+       text-align: center;
+}
+.copy-right{
+    text-align: center;
+    color: #000000;;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.footer-icon a{
+    margin: 0px 14px;
+    background-color: #c7d4c7f1;
+    border-radius:40%;
+    padding: 5px;
+}
+.footer-icon .fab{
+    color: #969BAB;
+    border-radius:20px ;
+}
+.fa-copyright{
+    font-size: 18px;
+
+}
+.footer-icon-hover{
+    margin-left: 290px;
+    margin-right: 290px;
+    padding: 5px;
+  }
+.footer-icon-hover:hover{
+    border: 2px solid green;
+    display: block;
+   
+}
+
+/*
+media quary 
+*/
+
+/* mobile  */
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        width: 100%;
+
+    }
+    .player{
+        flex-direction: column;
+    }
+    .player:hover{
+        border: 2px solid red;
+    }
+}
+@media only screen and (max-width:688px){
+    .top-banner{
+        flex-direction: column;
+        width:100%;
+        grid-column-gap: 10px;
+
+    }
+    .banner-text{
+        flex-basis: 100%;
+    }
+    .logo img{
+        width:300;
+    }
+    .footer-icon a{
+        margin: 0;
+        padding: 0;
+    }
+
+}
+/* i pad 
+ */
+ @media only screen and (min-width:688px) and (max-width:992px){
+     .container{
+         width: 100%
+     }
+     .players{
+         grid-template-columns:repeat(2, 1fr) ;
+     }
+     .player{
+        flex-direction: column;
+    }
+
+
+ }
