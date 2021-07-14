@@ -38,24 +38,30 @@ body{
     text-decoration: none;
     padding: 8px 24px;
     color:#FFFFFF;
-    font-size: 16px;
-    transition: width 2s;
-    
-}
+    font-size: 16px; 
+} 
 a .fa-arrow-right{
 margin-left: 5px;
 }
-/* .banner-text a:hover{
-    border: 3px solid #1505f7;
-    width: 300px;
-} */
+.fa-arrow-right:hover{
+    transform: rotate3d(2, -1, -1, -0.2turn);
+    color: #000000;
+    
+}
 .banner-image img{
     width: 444px;
     height: 438px;
     margin-top: 153px;
     margin-bottom: 86px;
     margin-right: 156px;
+    transition: transform  1s;
 }
+
+.banner-image img:hover{
+    transform: rotate3d(1, 1, 1, 50deg);
+    /* transform: rotate3d(2, -1, -1, -0.2turn); */
+}
+
 
 /*  ***********
 common utility
