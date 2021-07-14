@@ -177,11 +177,14 @@ media quary
         grid-template-columns: repeat(1, 1fr);
         align-items: center;
         width: 88%;
-        margin-left: 14px;
+        margin-left: 23px;
 
     }
     .player{
         flex-direction: column;
+    }
+    .player-image img{
+        padding-right: 10px;
     }
 }
 @media only screen and (max-width:688px){
@@ -209,17 +212,18 @@ media quary
     }
     .logo img{
         width:300px;
-        margin-left: 228px;
-        margin-right: 230px;
+        margin-left: 200px;
+        margin-right: 200px;    
     }
     .footer-icon a{
-        margin: 5px;
+       margin: 0;
+       padding: 0;
     }
     .copy-right{
-        font-size: 12px;
+        font-size: 8px;
     }
     .fa-copyright{
-        font-size: 12px;
+        font-size: 8px;
     }
 }
 /* i pad 
