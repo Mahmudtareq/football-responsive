@@ -150,6 +150,47 @@ footer{
     margin-right: 290px;
     padding: 5px;
   }
+  /* news letter section start */
+
+  .news-later{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    /* align-items: center; */
+    
+  }
+  .news{
+      width: 100%;
+  }
+  .news p{
+      margin-bottom: 10px;
+  }
+  .Recent-news{
+      width: 100%;
+  }
+  .form input {
+      padding: 15px;
+  }
+  .form p{
+      margin-bottom: 10px;
+  }
+  .news h2{
+      margin-bottom: 10px;
+  }
+  .Recent-news a{
+      text-decoration: none;
+      padding:12px 18px;
+      background-color: #c2b0b7;
+      margin-right: 30px;
+      
+  }
+  .Recent-news h2 ,h3,p{
+      margin-bottom: 20px;
+  }
+
+
+
+
 
 /*-----------------------------------
  responsive design
